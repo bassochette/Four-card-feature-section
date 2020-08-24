@@ -5,41 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Four card feature section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+<div class="container">
+  <section class="header">
+    <div class="header_subtitle">
+      Reliable, efficient delivery
+    </div>
+    <div class="header_title">
+      Powered by Technology
+    </div>
+    <div class="header_summary">
+      Our Artificial Intelligence powered tools use millions of project data points
+      to ensure that your project is successful
+    </div>
+  </section>
+  <section class="features">
+    <div class="features_desktop_left">
+      <div class="card">
+        <div class="colored cyan"></div>
+        <div class="card_title">
+          Supervisor
+        </div>
+        <div class="card_body">
+          Monitors activity to identify project roadblocks
+        </div>
+        <img src="images/icon-supervisor.svg" alt="supervisor feature icon">
+      </div>
+    </div>
+    <div class="feature_desktop_center">
+      <div class="card">
+        <div class="colored red"></div>
+        <div class="card_title">
+          Team Builder
+        </div>
+        <div class="card_body">
+          Scans our talent network to create the optimal team for your project
+        </div>
+        <img src="images/icon-team-builder.svg" alt="team builder feature icon">
+      </div>
+      <div class="card">
+        <div class="colored orange"></div>
+        <div class="card_title">
+          Karma
+        </div>
+        <div class="card_body">
+          Regularly evaluates our talent to ensure quality
+        </div>
+        <img src="images/icon-karma.svg" alt="karma feature icon">
+      </div>
+    </div>
+    <div class="feature_desktop_right">
+      <div class="card">
+        <div class="colored blue"></div>
+        <div class="card_title">
+          Calculator
+        </div>
+        <div class="card_body">
+          Uses data from past projects to provide better delivery estimates
+        </div>
+        <img src="images/icon-calculator.svg" alt="calculator feature icon">
+      </div>
+    </div>
+  </section>
+</div>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Julien Prugne</a>.
+  </p>
 </body>
 </html>
